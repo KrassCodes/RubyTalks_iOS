@@ -8,11 +8,22 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView{
+            List {
+                Text("meow")
+            }.navigationBarTitle(Text("Ruby Talks"))
+        }
     }
 }
+
+
+
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
