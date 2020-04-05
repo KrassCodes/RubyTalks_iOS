@@ -54,11 +54,11 @@ struct ContentView: View {
                 ForEach(networkManager.talks, id: \.talk_title) { talk in
                     HStack {
                         NavigationLink (destination: WebView(request: URLRequest(url: ((URL(string: talk.talk_video) ?? URL(string: "https://apple.com" ))!)))){
-                            Image("cat")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width:150)
-                                .cornerRadius(10)
+//                            Image("cat")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width:150)
+//                                .cornerRadius(10)
                             VStack(alignment: .leading){
                                 Text(talk.conference_name)
                                     .font(.body)
